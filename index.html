@@ -9,9 +9,22 @@
 </head>
 <body>
     <h1>Onde Estou?</h1>
-    <button id="btnLocalizacao">Encontrar Minha Localização</button>
+
+    <div class="controles">
+        <button id="btnLocalizacao">Acompanhar Minha Localização</button>
+
+        <form id="formEndereco">
+            <input type="text" id="inputEndereco" placeholder="Digite um endereço de destino" required>
+            <button type="submit">Buscar e Traçar Rota</button>
+        </form>
+    </div>
+
+    <p id="status">Clique no botão para começar a acompanhar sua localização.</p>
+    <p id="infoRota"></p>
+
     <div id="mapa"></div>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="script.js"></script>
-</body></html>
+</body>
+</html>

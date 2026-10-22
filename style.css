@@ -1,10 +1,12 @@
 body {
     font-family: sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 0 16px;
 }
 
 #mapa {
-    height: 400px; 
+    height: 400px;
     width: 80%;
     margin: 20px auto;
 }
@@ -13,4 +15,59 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.controles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#formEndereco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#inputEndereco {
+    padding: 10px;
+    font-size: 16px;
+    width: 280px;
+    max-width: 100%;
+}
+
+#status, #infoRota {
+    margin: 10px 0;
+}
+
+#infoRota {
+    font-weight: bold;
+}
+
+/* Ícones personalizados dos marcadores */
+.icone-marcador {
+    background: none;
+    border: none;
+}
+
+.icone-voce {
+    width: 18px;
+    height: 18px;
+    background: #1a73e8;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.icone-destino {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+@media (max-width: 600px) {
+    #mapa {
+        width: 100%;
+    }
 }
